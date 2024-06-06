@@ -1,0 +1,41 @@
+.custom-select {
+    position: relative;
+    display: inline-block;
+  }
+  
+ 
+  
+  .custom-select select + .custom-select__trigger {
+    position: relative;
+    display: block;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-select select + .custom-select__trigger:after {
+    position: absolute;
+    content: '\25BC';
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .custom-options {
+     position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    z-index: 99;
+  }
+  
+  .custom-select.open .custom-options {
+    display: block;
+  }
+  

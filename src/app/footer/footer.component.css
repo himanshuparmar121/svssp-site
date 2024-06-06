@@ -1,0 +1,19 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .address {
+    flex: 1;
+  }
+  
+  .map {
+    flex: 1;
+    /* Adjust the size and styling of the map as needed */
+  }
+  

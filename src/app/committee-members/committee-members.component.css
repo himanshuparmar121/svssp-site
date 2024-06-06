@@ -1,0 +1,92 @@
+.committee-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .committee-gallery {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 0 1 200px; /* Ensure the cards have a fixed width and can wrap */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Add some margin to separate the cards */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    padding: 10px;
+  }
+  
+  .card-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+  }
+  
+  .card-info p {
+    margin: 0;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .card img {
+      height: 100px;
+    }
+  }
+  
+  
+  .committee-table {
+    margin-top: 20px;
+    margin-left:  20%;
+    margin-right: 20% ;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  .text-commiters {
+    font-size: 1.5em;
+    margin: 0;
+    animation: slideIn 2s ease-in-out 0.5s;
+  }

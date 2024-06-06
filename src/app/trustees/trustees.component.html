@@ -1,0 +1,61 @@
+<div class="committee-container">
+    <div class="committee-gallery">
+        <div class="gallery-row">
+            <div class="card-container">
+                <div class="card" *ngFor="let member of committeeMembers">
+                    <img [src]="member.image" alt="{{ member.name }}">
+                    <div class="card-info">
+                        <h3>{{ member.name }}</h3>
+                        <p>{{ member.position }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-row">
+            <div class="card-container">
+                <div class="card" *ngFor="let member of committeeMembers">
+                    <img [src]="member.image" alt="{{ member.name }}">
+                    <div class="card-info">
+                        <h3>{{ member.name }}</h3>
+                        <p>{{ member.position }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="committee-table">
+        <div>
+            <span class="text-commiters">Other Trusties</span>
+        </div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Chairperson</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Vice Chairperson</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Vice Chairperson</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Vice Chairperson</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Vice Chairperson</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Vice Chairperson</td>
+            </tr>
+        </table>
+    </div>
+</div>
